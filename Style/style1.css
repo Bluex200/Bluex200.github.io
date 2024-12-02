@@ -1,0 +1,429 @@
+/*
+	Project: Fresh Food Market
+	Name: Xiuhong Zhou x23438347 /Ritvars Zelenins x22206531 / Marina Pavlo x24116998
+	Date:27th Nov 2024
+*/
+
+/* General Styles */
+body, html {
+    height: 100%; /* Set full height for the layout */
+    margin: 0; /* Remove default margin */
+    font-family: Arial, sans-serif; /* Use clean and modern font */
+}
+/* Header Section */
+#header {
+    display: flex; /* Use Flexbox for layout */
+    justify-content: space-between; /* Space between logo and navigation */
+    align-items: center; /* Center items vertically */
+    padding: 20px; /* Add padding inside the header */
+    background-color: white; /* White background for the header */
+}
+
+.logo img {
+    max-height: 200px; /* Limit logo height */
+    width: auto; /* Maintain aspect ratio */
+}
+.links {
+    display: flex; /* Use Flexbox for navigation links */
+    justify-content: center; /* Center the links */
+    flex: 1; /* Take up remaining space */
+    gap: 20px; /* Add space between links */
+    font-weight: bold; /* Make links bold */
+    flex-wrap: wrap; /* Allow wrapping to stack links */
+}
+
+.links a {
+    font-size: 1.2em; /* Increase link text size */
+    text-decoration: none; /* Remove underlining */
+    color: #328423; /* Green color for links */
+    padding: 10px 15px; /* Add padding for clickable area */
+    transition: color 0.3s ease; /* Smooth color transition on hover */
+}
+
+.links a:hover {
+    color: #C6F582; /* Light green on hover */
+}
+
+/* Media Query for smaller screens */
+@media (max-width: 768px) {
+    .links {
+        flex-direction: column; /* Stack links vertically */
+        align-items: center; /* Center align the stacked links */
+        gap: 10px; /* Adjust spacing between stacked links */
+    }
+}
+.search-bar {
+    color: black; /* Black text color */
+    padding: 12px 20px; /* Add padding inside the search bar */
+    border: 2px solid black; /* Black border for clarity */
+    border-radius: 25px; /* Rounded edges for the search bar */
+    font-size: 1rem; /* Adjust font size */
+    width: 250px; /* Fixed width */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions for interactions */
+}
+
+.search-bar:focus {
+    border-color: #328423; /* Green border highlight on focus */
+    outline: none; /* Remove default outline */
+    box-shadow: 0 0 8px rgba(50, 132, 35, 0.5); /* Add subtle glow effect */
+}
+
+/* Footer Section */
+/* Footer Section */
+#footer {
+  background-color: #328423;
+  color: white;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0px -5px 10px rgba(0, 0, 0, 0.5); /* Add a subtle shadow for depth */
+  position: relative; /* For decorative elements */
+  overflow: hidden; /* Hide decorative overflow */
+}
+
+/* Decorative gradient line at the top of the footer */
+#footer::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0));
+  top: 0;
+  left: 0;
+}
+
+/* Footer Content */
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 80%;
+  max-width: 1200px; /* Prevent footer from stretching too wide */
+}
+
+/* Left and Right Links */
+.left-links,
+.right-links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Link Styling */
+.left-links a,
+.right-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold; /* Make links stand out */
+  position: relative; /* For underline animation */
+  transition: color 0.3s ease; /* Smooth hover transition */
+}
+
+.left-links a:hover,
+.right-links a:hover {
+  color: #C6F582; /* Light yellow on hover */
+}
+
+.left-links a::after,
+.right-links a::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: white;
+  transition: width 0.3s ease-in-out;
+}
+
+.left-links a:hover::after,
+.right-links a:hover::after {
+  width: 100%; /* Animated underline on hover */
+}
+
+/* Right Paragraph Styling */
+.right-links p {
+  font-size: 0.9rem;
+  color: white;
+  letter-spacing: 0.5px; /* Improve readability */
+}
+
+/* CSS style for subscription page*/
+/*style for subscription plan*/
+/*subscription fonts*/
+.subscription {
+	text-align: center;
+	padding: 5px 5px;
+	color:#328423;
+}
+.subscription h1 {
+	font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+.subscription p {
+	font-size: 1.5rem;
+	margin-bottom: 3px;
+}
+/*subscription plan card*/
+.planContainer {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    padding: 40px;
+	margin-top: 2px;
+}
+.card {
+    background: #fff;/*white color background for the card*/
+    border-radius: 10px;/*round border*/
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 400px;/*card width*/
+    text-align: center;
+    padding: 20px;
+}
+.card:hover {
+    transform: translateY(-10px);/*moving the card when hovering*/
+}
+.card h2 {
+    font-size: 1.5rem;
+    color: #328423;
+    margin: 20px 0 10px;/*20px to the top and 10px to the bottom*/
+}
+.card p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 15px;
+	text-align: justify;/*justify the wording description of each plan*/
+}
+.card h3{
+	color:#328423;
+    line-height: 1.6;
+    margin: 15px;
+	text-align: center;
+}
+.card .addCart {
+    background-color:#8ED973;/*light green color to keep color consistent with the home page*/
+    color: #fff;/*font color inside the button*/
+    border: none;
+    padding: 10px 15px;
+    font-size: 1rem;
+    border-radius: 5px;/*round border*/
+}
+.card .addCart:hover {
+    background-color: #328423;/*dark green color to keep color consistent with the footer and header*/
+}
+/*customer review*/
+.reviewSection{
+    text-align: center;
+    padding: 20px;
+	color:#328423;/*dark green color to keep color consistent with the footer and header*/
+	font-size:1.5rem;
+}
+.review {
+    margin: 30px 0;
+	position: relative;/*remian in normal flow position*/
+	display: flex;
+	flex-direction: column; 
+	justify-content: center;
+	align-items: center;
+	font-size:1rem;
+}
+.review blockquote{
+    font-size: 0.9rem;
+    line-height: 1.2;/* Adjust line height for better spacing between lines */
+    margin: 10px auto;
+	max-width:700px;/*limit the width of each sentence*/
+	text-align: justify;/*make sure the details reviews in justify layout*/
+
+}
+.review blockquote::before{
+	color:#328423;
+	font-size: 1.5rem;
+    content: '"';/*blockquote for the begin of sentences* learned from https://www.w3schools.com/tags/tag_blockquote.asp/ */
+}
+.review blockquote::after{
+	color:#328423;
+	font-size: 1.5rem;
+    content: '"'; /*blockquote for the end of sentences* https://www.w3schools.com/tags/tag_blockquote.asp/ */
+}
+.review p{
+	font-size: 1rem;/*size of the fonts*/
+	color:#328423;/*dark green color to keep color consistent with the footer and header*/
+}
+
+
+
+
+/* CSS style for contact page*/
+/* Contact Us Banner Section */
+.contactUsBanner {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.contactUsBannerImg {
+    flex: 1;
+    min-width: 300px;
+    max-width: 800px;
+}
+.contactUsBannerImg img {
+    width: 100%;
+    height: auto;
+}
+.contactFonts {
+    flex: 1;
+    min-width: 300px;
+    max-width: 800px;
+    padding: 20px;
+	text-align: justify;/*make sure the words in justify layout*/
+}
+.contactFonts h2 {
+    font-size: 2.5rem;
+    color: #328423;
+    margin-bottom: 20px;
+}
+.contactFonts p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+/* Contact Us Details Section */
+.contactUsDetails {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px 100px;
+    justify-content: center;
+	gap:5px;
+}
+.contactUsDescription {
+    flex: 1;
+    max-width: 20%;
+    padding: 5px;
+}
+.contactUsDescription h2 {
+    font-size: 2.5rem;
+    color: #328423;/*light green color to keep color consistent with the home page*/
+    margin-bottom: 20px;
+}
+.contactUsDescription p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 10px;
+	text-align: justify;
+	max-width:300px;
+}
+.contactContainer{
+	flex:2;
+	max-width:45%;
+	color:#328423;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.inputDetails label {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+}
+.inputDetails input,
+.inputDetails select,
+.inputDetails textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #328423;/*dark green color to keep color consistent with the footer and header*/
+    border-radius: 5px;
+}
+.inputDetails textarea {
+    height: 60px;
+}
+.inputDetails button {
+	background-color:#8ED973;/*light green color to keep color consistent with home page*/
+    border: none;
+    padding: 10px 15px;
+    font-size: 1.2rem;
+    border-radius: 5px;/*round border*/
+	color:#fff;
+}
+.inputDetails button:hover {
+background-color: #328423;/*dark green color to keep color consistent with the footer and header*/
+}
+.locationMap {
+    margin-top:100px;
+	margin-bottom:20px;
+	text-align: center; /* Centers the map horizontally */
+}
+.locationMap iframe {
+    width: 60%; /* Makes the map large and centered */
+    height: 600px; /* Adjust height as needed */
+}
+.findUs{
+	font-size: 2.5rem;
+    color: #328423;
+    margin-bottom: 20px;
+}
+/*reponsive design for the contact us page*/
+@media (max-width: 768px) {
+    .contactUsDetails {
+        flex-direction: column; /* display vertically */
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .contactUsDescription {
+        max-width: 100%; /* Full width for descriptions */
+    }
+
+    .contactContainer {
+        max-width: 100%; /* Full width for the form */
+    }
+
+    .locationMap iframe {
+        width: 90%; /* Adjust map width */
+        height: 400px; /* Adjust map height */
+    }
+}
+@media (max-width: 480px) {
+    .contactFonts h2 {
+        font-size: 2rem; /* Smaller font size for header */
+    }
+
+    .contactFonts p {
+        font-size: 1rem; /* Smaller font size */
+    }
+
+    .contactUsDescription h2 {
+        font-size: 1.8rem; /* Adjust header size */
+    }
+
+    .contactUsDescription p {
+        font-size: 1rem; /* Smaller font size*/
+    }
+
+    .inputDetails label {
+        font-size: 1.2rem; /* Adjust label font size */
+    }
+
+    .inputDetails input,
+    .inputDetails select,
+    .inputDetails textarea {
+        font-size: 0.9rem; /* Smaller font size */
+    }
+
+    .locationMap iframe {
+        width: 100%; /* Full width*/
+        height: 300px; /* Shorter height */
+    }
+
+    .findUs {
+        font-size: 1.8rem; /* Smaller font size */
+    }
+}
+
+/*
+References:
+W3Schools, n.d. HTML <blockquote> tag. W3Schools. [online] Available at: https://www.w3schools.com/tags/tag_blockquote.asp [Accessed 2 December 2024].
+
+*/
