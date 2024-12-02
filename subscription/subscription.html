@@ -1,0 +1,116 @@
+<!--
+	Project: Fresh Food Market
+	Name: Xiuhong Zhou x23438347 /Ritvars Zelenins x22206531 / Marina Pavlo x24116998
+	Date:27th Nov 2024
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8"> <!-- learned from w3school https://www.w3schools.com/tags/att_meta_charset.asp-->
+		<title>Subscription Plans</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="../style/style.css">
+	</head>
+	<body>
+	<!-- Header Section -->
+	<header id="header">
+		<div class="logo"><a href="../index.html">
+			<img src="../Images/Logo.png" alt="Logo" class="logo-img">
+		</div>
+		<div class="links">
+			<a class="active" href="../index.html">Home</a>
+			<a href="../Products.html">Product</a>
+			<a href="../contact/contact.html">Contact</a>
+			<a href="../subscription/subscription.html">Subscribe</a>
+			<input type="text" placeholder="Search.." class="search-bar">
+		</div>
+	</header>
+	<!--subscirption wording-->
+	<div class="subscription">
+		<h1>Choose Your Plan</h1>
+		<p>Fresh good and premium groceries delivered weekly to your door</p>
+	</div>
+	<!--subscription plan section-->
+	<div class="planContainer">
+		<div class="card"> <!--card design idea learned from https://dropchef.com/sign-up/ , but didn't use their code-->
+			<img src="../Images/food4.jpg" alt="Basic Plan"><!-- photo reference:https://foodindustryexecutive.com/2017/02/fresh-food-consumption-rise/-->
+			<h2>Basic Plan</h2>
+			<p>This plan is for you if you want to choose 15 products. There are a range of options including some vegan-friendly options.You can mix-and-match between delicious fresh food or frozen products, depending on what you’re in the mood for.</p>
+			<br>
+			<h3>€29.99 / week</h3>
+			<button class="addCart" onclick="Subscribe()">Subscribe</button>
+		</div>
+		<div class="card">
+			<img src="../Images/food5.jpg" alt="Classic Plan"><!--photo reference:https://vavista.com/blog/three-reasons-why-fresh-is-best-better-than-the-latest-diet-or-health-fad/-->
+			<h2>Classic Plan</h2>
+			<p>This plan is for you if you want to freedom to choose between any of our 30 available products each week.You can mix-and-match between delicious fresh food, and a variety of cupboard depending on what you’re in the mood for.</p>
+			<br>
+			<h3>€49.99 / week</h3>
+			<button class="addCart" onclick="Subscribe()">Subscribe</button>
+		</div>
+		<div class="card">
+			<img src="../Images/food8.jpg" alt="Family Plan"><!--https://stockcake.com/i/grocery-shopping-day_1343102_895618-->
+			<h2>Family Plan</h2>
+			<p>The Family plan is more suitable for a household that needs over 70 products per week.You can mix-and-match between delicious fresh food, a variety of cupboard, and a range of toiletries depending on what you’re in the mood for.</p>
+			<br>
+			<h3>€79.99 / week</h3>
+			<button class="addCart"onclick="Subscribe()">Subscribe</button>
+		</div>
+	</div>
+	 <!-- review Section -->
+	<div>
+		<div class="reviewSection"><!-- design idea learned from https://eatstro.com/options/, but didn't use their code -->
+		<img src="../Images/icon1.png" alt="Icon"> <!--photo reference:https://pngtree.com/so/healthy-food-icon-->
+		<h2>What Our Cutsomers Said</h2>
+		</div>
+		<div class="review">
+		<blockquote> <!-- all the reviews just wrote by myself, blockquote learned from https://www.w3schools.com/tags/tag_blockquote.asp-->
+		I absolutely love the variety and freshness of the products! The products are always top quality, and the choices of products are perfect for my family. Plus, it's such a time saver knowing I don’t have to shop around for the best items anymore. Highly recommend it to anyone looking for convenience and quality!
+		</blockquote> 
+		<p>Sarah, Galway</p>
+		</div>
+		<div class="review">
+		<blockquote>
+		The fresh food market has completely changed how we buy the groceries. The quality of food is unmatched, and everything is packed perfectly to retain freshness. We’ve noticed a significant reduction in food waste since switching to them. Amazing service and worth every penny!
+		</blockquote>
+		<p>David, Cork</p>
+		</div>
+		<div class="review">
+		<blockquote>
+		I’ve been ordering for three months now, and I couldn’t be happier! The food is always fresh, the range of prodocts keeps meals exciting. The eco-friendly packaging makes the recycle process so much easier. This has been a game-changer for our household!
+		</blockquote>
+		<p>Emily, Dublin</p>
+		</div>
+	</div>
+	<!-- Footer Section -->
+	<footer id="footer">
+		<div class="footer-content">
+		<div class="left-links">
+			<a class="active" href="../index.html">Home</a>
+			<a href="../Products.html">Product</a>
+			<a href="../contact/contact.html">Contact</a>
+			<a href="../subscription/subscription.html">Subscribe</a>
+		</div> 
+		<div class="right-links">
+			<a href="Privacy Policy">Privacy Policy</a> 
+			<a href="Terms of Service">Terms of Service</a>
+			<p>&copy; 2024 CMF Food Market Ltd. All rights reserved.</p>
+		</div>
+		</div>
+	</footer>
+	<script src="../behave/behave.js"><!--link to the javascript file -->
+	</script>
+	</body>
+</html>
+
+<!--
+References:
+DropChef, n.d. Sign up. [online] Available at: https://dropchef.com/sign-up/ [Accessed 2 December 2024].
+Eatstro, n.d. Options. Eatstro. [online] Available at: https://eatstro.com/options/ [Accessed 2 December 2024].
+Food Industry Executive, 2017. Fresh food consumption on the rise. Food Industry Executive. [online] Available at: https://foodindustryexecutive.com/2017/02/fresh-food-consumption-rise/ [Accessed 2 December 2024].
+PNGTree, n.d. Healthy food icon. PNGTree. [online] Available at: https://pngtree.com/so/healthy-food-icon [Accessed 2 December 2024].
+Stockcake, n.d. Grocery shopping day. Stockcake. [online] Available at: https://stockcake.com/i/grocery-shopping-day_1343102_895618 [Accessed 2 December 2024].
+Vavista, n.d. Three reasons why fresh is best: Better than the latest diet or health fad. Vavista. [online] Available at: https://vavista.com/blog/three-reasons-why-fresh-is-best-better-than-the-latest-diet-or-health-fad/ [Accessed 2 December 2024].
+W3Schools, n.d. HTML <blockquote> tag. W3Schools. [online] Available at: https://www.w3schools.com/tags/tag_blockquote.asp [Accessed 2 December 2024].
+-->
