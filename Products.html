@@ -1,0 +1,180 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style/Style.css">
+    <title>Products</title>
+    <style>
+        /*Enforced grid layout styles*/
+        .main-container {
+            padding: 20px;
+        }
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .product-item {
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+            background-color: #fff;
+            padding: 10px;
+        }
+        .product-item img {
+            width: 100%;
+            max-width: 180px;
+            height: auto;
+            margin: 0 auto;
+        }
+        .product-item h3 {
+            margin: 10px 0 5px;
+            font-size: 1.2em;
+            color: #333;
+        }
+        .product-item p {
+            margin: 5px 0;
+            font-size: 0.9em;
+            color: #666;
+        }
+        .product-item .price {
+            font-weight: bold;
+            color: #28a745;
+            font-size: 1em;
+        }
+    </style>
+</head>
+<body class="products-page">
+    <header id="header">
+        <div class="logo">
+            <img src="Images/Logo.png" alt="Logo" class="logo-img">
+        </div>
+        <div class="links">
+            <a href="Index.html">Home</a>
+            <a class="active" href="Products.html">Products</a>
+            <a href="contact">Contact</a>
+            <a href="subscribe">Subscribe</a>
+            <input type="text" placeholder="Search.." class="search-bar">
+        </div>
+    </header>
+    <div class="main-container">
+
+        <section class="category-section">
+            <h2>Fresh Food</h2>
+            <div class="product-grid">
+                <div class="product-item">
+                    <img src="Images/Product_8.jpeg" alt="Leafy Green Spinach">
+                    <h3>Leafy Green Spinach</h3>
+                    <p>Fresh and healthy green spinach.</p>
+                    <p class="price">€2.50</p>
+                </div>
+                <div class="product-item">
+                    <img src="Images/Product_10.jpeg" alt="Seasonal Fruit Basket">
+                    <h3>Seasonal Fruit Basket</h3>
+                    <p>A vibrant mix of seasonal fruits.</p>
+                    <p class="price">€12.00</p>
+                </div>
+                <div class="product-item">
+                    <img src="Images/Product_11.jpeg" alt="Fresh Organic Carrots">
+                    <h3>Fresh Organic Carrots</h3>
+                    <p>Crunchy and fresh organic carrots.</p>
+                    <p class="price">€1.80</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="category-section">
+            <h2>Cupboard</h2>
+            <div class="product-grid">
+                <div class="product-item">
+                    <img src="Images/Product_7.jpeg" alt="Organic Lentils">
+                    <h3>Organic Lentils</h3>
+                    <p>Perfect for soups and stews.</p>
+                    <p class="price">€3.50</p>
+                </div>
+                <div class="product-item">
+                    <img src="Images/Product_6.jpeg" alt="Natural Honey">
+                    <h3>Natural Honey</h3>
+                    <p>Pure and delicious natural honey.</p>
+                    <p class="price">€6.50</p>
+                </div>
+                <div class="product-item">
+                    <img src="Images/Product_9.jpeg" alt="Wholegrain Pasta">
+                    <h3>Wholegrain Pasta</h3>
+                    <p>Healthy and fiber-rich pasta.</p>
+                    <p class="price">€2.00</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="category-section">
+            <h2>Frozen</h2>
+            <div class="product-grid">
+                <div class="product-item">
+                    <img src="Images/Product_4.jpeg" alt="Mixed Frozen Veggies">
+                    <h3>Mixed Frozen Veggies</h3>
+                    <p>Quick and easy to cook frozen vegetables.</p>
+                    <p class="price">€4.00</p>
+                </div>
+                <div class="product-item">
+                    <img src="Images/Product_5.jpeg" alt="Frozen Chicken Fillets">
+                    <h3>Frozen Chicken Fillets</h3>
+                    <p>Premium quality frozen chicken.</p>
+                    <p class="price">€8.00</p>
+                </div>
+                <div class="product-item">
+                    <img src="Images/Product_3.jpeg" alt="Frozen Berries">
+                    <h3>Frozen Berries</h3>
+                    <p>A delicious mix of frozen berries.</p>
+                    <p class="price">€5.50</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="category-section">
+            <h2>Toiletries</h2>
+            <div class="product-grid">
+                <div class="product-item">
+                    <img src="Images/Product_1.jpeg" alt="Handmade Soap">
+                    <h3>Handmade Soap</h3>
+                    <p>Luxurious and natural handmade soap.</p>
+                    <p class="price">€4.00</p>
+                </div>
+                <div class="product-item">
+                    <img src="Images/Product_2.jpeg" alt="Bamboo Toothbrush">
+                    <h3>Bamboo Toothbrush</h3>
+                    <p>Eco-friendly and sustainable toothbrush.</p>
+                    <p class="price">€3.00</p>
+                </div>
+                <div class="product-item">
+                    <img src="Images/Product_12.jpeg" alt="Shampoo Bar">
+                    <h3>Shampoo Bar</h3>
+                    <p>Natural and plastic-free shampoo bar.</p>
+                    <p class="price">€5.00</p>
+                </div>
+            </div>
+        </section>
+
+    </div>
+    <footer id="footer">
+        <div class="footer-content">
+            <div class="left-links">
+                <a href="Index.html">Home</a>
+                <a href="Products.html">Products</a>
+                <a href="contact">Contact</a>
+                <a href="subscribe">Subscribe</a>
+            </div>
+            <div class="right-links">
+                <a href="Privacy Policy">Privacy Policy</a>
+                <a href="Terms of Service">Terms of Service</a>
+                <p>&copy; 2024 Food Market. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
