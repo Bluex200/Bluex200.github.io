@@ -315,7 +315,7 @@ body, html {
 }
 .contactContainer{
 	flex:2;
-	max-width:50%;
+	max-width:60%;
 	color:#328423;
 }
 form{
