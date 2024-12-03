@@ -274,7 +274,7 @@ body, html {
 .contactFonts {
     flex: 1;
     min-width: 300px;
-    max-width: 500px;
+    max-width: 450px;
     padding: 20px;
 	text-align: justify;/*make sure the words in justify layout*/
 }
