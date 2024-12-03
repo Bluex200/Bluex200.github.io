@@ -147,6 +147,23 @@ body, html {
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3); /* Stronger shadow on hover */
 }
 
+/* Styling for the Link inside Offers Title */
+.offers-title a {
+    color: inherit; /* Inherit the color from the parent (black) */
+    text-decoration: none; /* Remove underline */
+    font-size: inherit; /* Inherit font size from parent */
+    font-weight: inherit; /* Inherit font weight from parent */
+    letter-spacing: inherit; /* Inherit letter spacing */
+    display: inline-block; /* Ensure proper box model for the link */
+    width: 100%; /* Allow the link to cover the full width of the parent */
+    height: 100%; /* Allow the link to cover the full height of the parent */
+}
+
+.offers-title a:hover {
+    color: inherit; /* Ensure color remains unchanged on hover */
+    text-decoration: none; /* Prevent underline from appearing on hover */
+}
+
 .offers {
     display: grid; /* Use grid layout */
     grid-template-columns: repeat(2, 1fr); /* Two columns */

@@ -7,57 +7,61 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<link rel="icon" href="Images/Logo.ico" type="image/x-icon">
+	<link rel="icon" href="images/Logo.ico" type="image/x-icon">
     <title>FreshFoodMarket</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Style/Style.css">
+    <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
     <!-- Header Section -->
     <header id="header">
-        <div class="logo"><a href="index.html">
-            <img src="Images/Logo.png" alt="Logo" class="logo-img">
+        <div class="logo"><a href="index.html"></a>
+            <img src="images/Logo.png" alt="Logo" class="logo-img">
         </div>
-        <div class= "links"><a href="index.html">
-            <a class="active" href="index.html">Home</a>
-            <a href="Products.html">Products</a>
-            <a href="../contact/contact.html">Contact</a>
-            <a href="../subscription/subscription.html">Subscribe</a>
-            <input type="text" placeholder="Search.." class="search-bar">
-        </div>
+        <div class="links">
+			<a class="active" href="index.html">Home</a>
+			<a href="products/products.html">Products</a>
+			<a href="contact/contact.html">Contact</a>
+			<a href="subscription/subscription.html">Subscribe</a>
+			<input type="text" placeholder="Search.." class="search-bar">
+		</div>
+
     </header>
 
-    <!-- Hero Section -->
-    <div class="hero-image">
-        <div class="hero-text">
-            <h1>Welcome to Fresh Food Market</h1>
-            <p>Delivering groceries at your door step</p>
-            <button>Shop</button>
-        </div>
-    </div>
-    <!--Offeres-->
-	<div class="offers-container">
-		<!--Offers Title -->
-		<p class="offers-title">
-			SIGN UP today, become a MEMBER and recieve special offers
-		</p>
+	<div class="hero-image">
+		<div class="hero-text">
+			<h1>Welcome to Fresh Food Market</h1>
+			<p>Delivering groceries at your doorstep</p>
+			<a href="products/products.html">
+				<button>Shop</button>
+			</a>
+		</div>
+	</div>
+
+<div class="offers-container">
+    <!-- Offers Title -->
+    <p class="offers-title">
+        <a href="subscription/subscription.html" class="offers-link">
+            SIGN UP today, become a MEMBER and receive special offers
+        </a>
+    </p>
 
 		<!-- Offers images -->
 		<div class="offers">
 			<a href="/subscribe?plan=discount" class="offer">
-				<img src="Images/Bananas.png" alt="Offer 1">
+				<img src="images/Bananas.png" alt="Offer 1">
 				<div class="overlay">-10%</div>
 			</a>
 			<a href="/subscribe?plan=discount" class="offer">
-				<img src="Images/Peas.png" alt="Offer 2">
+				<img src="images/Peas.png" alt="Offer 2">
 				<div class="overlay">-15%</div>
 			</a>
 			<a href="/subscribe?plan=discount" class="offer">
-				<img src="Images/Tomatoes.png" alt="Offer 3">
+				<img src="images/Tomatoes.png" alt="Offer 3">
 				<div class="overlay">-20%</div>
 			</a>
 			<a href="/subscribe?plan=discount" class="offer">
-				<img src="Images/DishSoap.png" alt="Offer 4">
+				<img src="images/DishSoap.png" alt="Offer 4">
 				<div class="overlay">-25%</div>
 			</a>
 		</div>
@@ -67,7 +71,7 @@
         <div class="why-foodmarket">
             <div class="foodmarket-container">
                 <div class="foodmarket-image">
-                    <img src="Images/Phone.png" alt="Food Market App">
+                    <img src="images/Phone.png" alt="Food Market App">
                 </div>
                 <div class="foodmarket-text">
                     <h2>WHY FRESH FOOD MARKET?</h2>
@@ -85,34 +89,33 @@
         <!-- Categories Section -->
         <div class="categories-container">
             <div class="categories">
-                <a href="/category/fruits" class="category">
-                    <img src="Images/FreshFood.png" alt="Fruits">
+                <a href="products/products.html" class="category">
+                    <img src="images/FreshFood.png" alt="Fruits">
                     <div class="label">Fresh Foods</div>
                 </a>
-                <a href="/category/vegetables" class="category">
-                    <img src="Images/Cupboard.png" alt="Vegetables">
+                <a href="products/products.html" class="category">
+                    <img src="images/Cupboard.png" alt="Vegetables">
                     <div class="label">Cupboard</div>
                 </a>
-                <a href="/category/snacks" class="category">
-                    <img src="Images/Frozen.png" alt="Snacks">
+                <a href="products/products.html" class="category">
+                    <img src="images/Frozen.png" alt="Snacks">
                     <div class="label">Frozen</div>
                 </a>
-                <a href="/category/drinks" class="category">
-                    <img src="Images/Toiletries.png" alt="Drinks">
+                <a href="products/products.html" class="category">
+                    <img src="images/Toiletries.png" alt="Drinks">
                     <div class="label">Toiletries</div>
                 </a>
             </div>
         </div>
-    </div>
 
     <!-- Footer Section -->
     <footer id="footer">
         <div class="footer-content">
             <div class="left-links">
                 <a class="active" href="index.html">Home</a>
-                <a href="Products.html">Products</a>
-                <a href="../contact/contact.html">Contact</a>
-                <a href="../subscription/subscription.html">Subscribe</a>
+                <a href="products/products.html">Products</a>
+                <a href="contact/contact.html">Contact</a>
+                <a href="subscription/subscription.html">Subscribe</a>
             </div> 
             <div class="right-links">
                 <a href="Privacy Policy">Privacy Policy</a> 
