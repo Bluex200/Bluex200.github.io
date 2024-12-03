@@ -292,7 +292,7 @@ body, html {
 .contactUsDetails {
     display: flex;
     flex-wrap: wrap;
-    padding: 20px 100px;
+    padding: 20px 70px;
     justify-content: center;
 	gap:5px;
 }
