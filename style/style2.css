@@ -197,4 +197,5 @@ body, html {
 	font-size: 1.5rem; /* Adjust font size */
     	margin-bottom: 20px; /* Adds spacing below the title */
     	color: #328423; /* Matches the green color in other pages */
+	margin-top: 30px;/* Adds spacing above the title */
 }
