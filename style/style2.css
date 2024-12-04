@@ -195,9 +195,12 @@ body, html {
     color: #328423;
 }
 .category h2 {
-	text-align: center; /* Centers the title */
-	font-size: 1.5rem; /* Adjust font size */
-    	margin-bottom: 20px; /* Adds spacing below the title */
-    	color: #328423; /* Matches the green color in other pages */
-	margin-top: 30px;/* Adds spacing above the title */
+   text-align: center; /* Centers the title */
+   font-size: 1.5rem; /* Adjust font size */
+   margin-bottom: 20px; /* Adds spacing below the title */
+   color: #328423; /* Matches the green color in other pages */ 
+   margin-top: 30px;/* Adds spacing above the title */
+}
+.category {
+    margin-bottom: 40px; /* Adds margin below the entire category section */
 }
