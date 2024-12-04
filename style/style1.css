@@ -360,7 +360,7 @@ background-color: #328423;/*dark green color to keep color consistent with the f
 /*google map section*/
 .locationMap {
     margin-top:100px;
-	margin-bottom:20px;
+	margin-bottom:30px;
 	text-align: center; /* Centers the map horizontally */
 }
 .locationMap iframe {
