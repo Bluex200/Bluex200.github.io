@@ -78,6 +78,7 @@ body, html {
   box-shadow: 0px -5px 10px rgba(0, 0, 0, 0.5); /* Add a subtle shadow for depth */
   position: relative; /* For decorative elements */
   overflow: hidden; /* Hide decorative overflow */
+  margin-top: 20px;
 }
 
 /* Decorative gradient line at the top of the footer */
