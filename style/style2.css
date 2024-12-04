@@ -174,8 +174,10 @@ body, html {
 
 .product-item img {
     width: 100%;
-    max-width: 180px;
+    max-width: 150px;
     height: auto;
+    object-fit: cover; /* Ensures images are properly cropped */
+    argin: 0 auto; /* Centers the image*/
 }
 
 .product-item h3 {
