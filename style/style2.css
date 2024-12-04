@@ -192,9 +192,9 @@ body, html {
     font-weight: bold;
     color: #328423;
 }
-.category h2{
+.category h2 {
 	text-align: center; /* Centers the title */
 	font-size: 1.5rem; /* Adjust font size */
     	margin-bottom: 20px; /* Adds spacing below the title */
-    	color: #328423; /* Matches the green theme */
+    	color: #328423; /* Matches the green color in other pages */
 }
