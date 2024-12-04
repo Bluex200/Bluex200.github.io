@@ -291,15 +291,24 @@ body, html {
 /* Contact Us Details Section */
 .contactUsDetails {
     display: flex;
-    flex-wrap: wrap;
-    padding: 20px 10px;
+    flex-wrap: wrap; /* Allows stacking on smaller screens */
+    align-items: flex-start;
     justify-content: center;
-	gap:50px;
+    gap: 40px; /* Space between description and form */
+    padding: 40px 20px;
+    background-color: #f9f9f9; /* Light grey background color , consistent with home page*/
+    border-radius: 10px; /* Rounded edges */
+    margin: 20px auto; /* Center content */
+	max-width: 1400px;/*to make sure this part size consistent with above*/
 }
+/*description section*/
 .contactUsDescription {
     flex: 1;
-    max-width: 20%;
-    padding: 10px;
+    max-width: 40%; /* Set width */
+    text-align: left; /* Align text to the left */
+    padding: 20px;
+    font-size: 1.2rem;
+    color: #333;
 }
 .contactUsDescription h2 {
     font-size: 2.5rem;
@@ -307,31 +316,29 @@ body, html {
     margin-bottom: 20px;
 }
 .contactUsDescription p {
-    font-size: 1.2rem;
     line-height: 1.6;
-    margin-bottom: 10px;
-	text-align: justify;
-	max-width:300px;
+    margin-bottom: 15px;
 }
 .contactContainer{
-	flex:2;
-	max-width:40%;
-	color:#328423;
+	flex:1;
+	max-width:45%;
+	padding: 30px;
 }
 form{
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 20px;
 }
 .inputDetails label {
     font-size: 1.5rem;
     margin-bottom: 5px;
+	color: #328423;/*dark green color to keep color consistent with the footer and header*/
 }
 .inputDetails input,
 .inputDetails select,
 .inputDetails textarea {
     width: 100%;
-    padding: 10px;
+    padding: 12px;
     font-size: 1rem;
     border: 1px solid #328423;/*dark green color to keep color consistent with the footer and header*/
     border-radius: 5px;
@@ -342,7 +349,7 @@ form{
 .inputDetails button {
 	background-color:#8ED973;/*light green color to keep color consistent with home page*/
     border: none;
-    padding: 10px 15px;
+    padding: 12px;
     font-size: 1.2rem;
     border-radius: 5px;/*round border*/
 	color:#fff;
@@ -350,6 +357,7 @@ form{
 .inputDetails button:hover {
 background-color: #328423;/*dark green color to keep color consistent with the footer and header*/
 }
+/*google map section*/
 .locationMap {
     margin-top:100px;
 	margin-bottom:20px;
@@ -357,7 +365,8 @@ background-color: #328423;/*dark green color to keep color consistent with the f
 }
 .locationMap iframe {
     width: 60%; /* Makes the map large and centered */
-    height: 600px; /* Adjust height as needed */
+    height: 600px; /* Adjust height */
+	max-width: 1400px;/*size align with other parts*/
 }
 .findUs{
 	font-size: 2.5rem;
