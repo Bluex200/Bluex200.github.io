@@ -1,0 +1,102 @@
+/*
+	Project: Fresh Food Market
+	Name: Xiuhong Zhou x23438347 /Ritvars Zelenins x22206531 / Marina Pavlo x24116998
+	Date:27th Nov 2024
+*/
+
+
+/*general page style*/
+body.products-page {
+    font-family: Calibri, sans-serif; /*Calibri font*/
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9; /*light gray background color */
+}
+
+/* Header Styles */
+body.products-page #header {
+    display: flex; /*flexbox layout for header */
+    justify-content: space-between; /*space between logo and links*/
+    align-items: center; /*vertically center elements*/
+    padding: 20px;
+    background-color: white; /*white background for header*/
+    border-bottom: 2px solid #328423; /*green border for visual separation*/
+}
+
+/*logo styling*/
+body.products-page .logo img {
+    max-height: 80px; /*restrict logo height*/
+    width: auto; /*maintain aspect ratio*/
+}
+
+/*navigation links styling*/
+body.products-page .links a {
+    text-decoration: none; /*remove underline*/
+    color: #328423; /*green color for links*/
+    font-weight: bold; /*bold text*/
+    transition: color 0.3s ease; /*smooth hover transition*/
+}
+
+/*hover effect for navigation links*/
+body.products-page .links a:hover {
+    color: #C6F582; /*light green color for hover*/
+}
+
+/*product grid layout*/
+body.products-page .product-grid {
+    display: grid; /*use grid layout*/
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /*flexible grid*/
+    gap: 20px; /*space between grid items*/
+    margin: 20px auto;
+    max-width: 1200px; /*center and limit grid width*/
+}
+
+/*product item styling*/
+body.products-page .product-item {
+    text-align: center; /*center-aligment for text*/
+    padding: 15px;
+    background-color: white; /*white background for cards*/
+    border: 1px solid #328423; /*green border*/
+    border-radius: 8px; /*rounded corners*/
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /*smooth hover animation*/
+}
+
+/*hover effect for product items*/
+body.products-page .product-item:hover {
+    transform: scale(1.05); /*enlarge slightly on hover*/
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /*add shadow on hover*/
+}
+
+/*product image styling */
+body.products-page .product-item img {
+    width: 100%; /*make image responsive*/
+    max-width: 180px; /*limit maximum width*/
+    margin: 0 auto; /*center image*/
+}
+
+/*product title styling*/
+body.products-page .product-item h3 {
+    color: #333; /*dark gray for text*/
+    margin: 10px 0 5px;
+}
+
+/*product description styling*/
+body.products-page .product-item p {
+    margin: 5px 0; /*add vertical spacing*/
+    color: #666; /*light gray for descriptions*/
+}
+
+/*product price styling */
+body.products-page .product-item .price {
+    font-weight: bold; /*bold text for emphasis*/
+    color: #328423; /*green color for prices*/
+}
+
+/*footer styling*/
+body.products-page #footer {
+    background-color: #328423; /*green background*/
+    color: white; /*white text*/
+    padding: 20px;
+    text-align: center; /*center-align text*/
+    border-top: 2px solid #C6F582; /*light green border for decoration*/
+}
