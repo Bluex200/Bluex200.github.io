@@ -175,9 +175,9 @@ body, html {
 .product-item img {
     width: 100%;
     max-width: 150px;
-    height: auto;
+    height: 150px;
     object-fit: cover; /* Ensures images are properly cropped */
-    argin: 0 auto; /* Centers the image*/
+    margin: 0 auto; /* Centers the image*/
 }
 
 .product-item h3 {
