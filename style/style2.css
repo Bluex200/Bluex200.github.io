@@ -5,61 +5,148 @@
 */
 /* General Styles */
 body, html {
-    height: 100%;
-    margin: 0;
-    font-family: Calibri, sans-serif;
+    height: 100%; /* Set full height for the layout */
+    margin: 0; /* Remove default margin */
+    font-family: Calibri, sans-serif; /* Use clean and modern font */
 }
-
 /* Header Section */
 #header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 30px;
-    background-color: white;
-    border-bottom: 2px solid #328423;
+    display: flex; /* Use Flexbox for layout */
+    justify-content: space-between; /* Space between logo and navigation */
+    align-items: center; /* Center items vertically */
+    padding: 20px; /* Add padding inside the header */
+    background-color: white; /* White background for the header */
 }
 
 .logo img {
-    max-height: 80px;
-    width: auto;
+    max-height: 200px; /* Limit logo height */
+    width: auto; /* Maintain aspect ratio */
+}
+.links {
+    display: flex; /* Use Flexbox for navigation links */
+    justify-content: center; /* Center the links */
+    flex: 1; /* Take up remaining space */
+    gap: 20px; /* Add space between links */
+    font-weight: bold; /* Make links bold */
+    flex-wrap: wrap; /* Allow wrapping to stack links */
 }
 
-.logo p {
-    margin: 0;
-    font-size: 1.5em;
-    color: #328423;
-    font-weight: bold;
+.links a {
+    font-size: 1.2em; /* Increase link text size */
+    text-decoration: none; /* Remove underlining */
+    color: #328423; /* Green color for links */
+    padding: 10px 15px; /* Add padding for clickable area */
+    transition: color 0.3s ease; /* Smooth color transition on hover */
 }
 
-nav {
-    display: flex;
-    gap: 20px;
+.links a:hover {
+    color: #C6F582; /* Light green on hover */
 }
 
-nav a {
-    text-decoration: none;
-    color: #328423;
-    font-weight: bold;
-    transition: color 0.3s ease;
+/* Media Query for smaller screens */
+@media (max-width: 768px) {
+    .links {
+        flex-direction: column; /* Stack links vertically */
+        align-items: center; /* Center align the stacked links */
+        gap: 10px; /* Adjust spacing between stacked links */
+    }
 }
-
-nav a:hover,
-nav a.active {
-    color: #C6F582;
-}
-
-.search-container {
-    display: flex;
-    align-items: center;
-}
-
 .search-bar {
-    padding: 10px 15px;
-    border: 2px solid #328423;
-    border-radius: 20px;
-    font-size: 1em;
+    color: black; /* Black text color */
+    padding: 12px 20px; /* Add padding inside the search bar */
+    border: 2px solid black; /* Black border for clarity */
+    border-radius: 25px; /* Rounded edges for the search bar */
+    font-size: 1rem; /* Adjust font size */
+    width: 250px; /* Fixed width */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions for interactions */
 }
+
+.search-bar:focus {
+    border-color: #328423; /* Green border highlight on focus */
+    outline: none; /* Remove default outline */
+    box-shadow: 0 0 8px rgba(50, 132, 35, 0.5); /* Add subtle glow effect */
+}
+
+/* Footer Section */
+/* Footer Section */
+#footer {
+  background-color: #328423;
+  color: white;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0px -5px 10px rgba(0, 0, 0, 0.5); /* Add a subtle shadow for depth */
+  position: relative; /* For decorative elements */
+  overflow: hidden; /* Hide decorative overflow */
+}
+
+/* Decorative gradient line at the top of the footer */
+#footer::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0));
+  top: 0;
+  left: 0;
+}
+
+/* Footer Content */
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 80%;
+  max-width: 1200px; /* Prevent footer from stretching too wide */
+}
+
+/* Left and Right Links */
+.left-links,
+.right-links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Link Styling */
+.left-links a,
+.right-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold; /* Make links stand out */
+  position: relative; /* For underline animation */
+  transition: color 0.3s ease; /* Smooth hover transition */
+}
+
+.left-links a:hover,
+.right-links a:hover {
+  color: #C6F582; /* Light yellow on hover */
+}
+
+.left-links a::after,
+.right-links a::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: white;
+  transition: width 0.3s ease-in-out;
+}
+
+.left-links a:hover::after,
+.right-links a:hover::after {
+  width: 100%; /* Animated underline on hover */
+}
+
+/* Right Paragraph Styling */
+.right-links p {
+  font-size: 0.9rem;
+  color: white;
+  letter-spacing: 0.5px; /* Improve readability */
+}
+
 
 /* Product Grid Section */
 .product-grid {
@@ -105,26 +192,3 @@ nav a.active {
     color: #328423;
 }
 
-/* Footer Section */
-footer {
-    background-color: #328423;
-    color: white;
-    padding: 20px 30px;
-    display: flex;
-    justify-content: space-between;
-    border-top: 2px solid #C6F582;
-}
-
-.footer-links,
-.footer-info {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-.footer-links a,
-.footer-info a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-}
