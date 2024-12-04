@@ -268,7 +268,7 @@ body, html {
     max-width: 800px;
 }
 .contactUsBannerImg img {
-    width: 100%;
+    width: 90%;
     height: auto;
 }
 .contactFonts {
@@ -315,7 +315,7 @@ body, html {
 }
 .contactContainer{
 	flex:2;
-	max-width:50%;
+	max-width:40%;
 	color:#328423;
 }
 form{
