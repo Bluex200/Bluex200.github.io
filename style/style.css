@@ -252,6 +252,8 @@ body, html {
 .foodmarket-text h3 {
     font-size: 1.5rem; /* Adjust subheading size */
     margin-bottom: 15px; /* Add space below the subheading */
+    color:#328423;/*same color with the hearder*/
+
 }
 
 .foodmarket-text p {
