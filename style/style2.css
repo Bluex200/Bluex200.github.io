@@ -124,21 +124,18 @@ body, html {
   color: #C6F582; /* Light yellow on hover */
 }
 
-.left-links a::after,
-.right-links a::after {
-  content: '';
-  position: absolute;
-  bottom: -2px;
-  left: 0;
-  width: 0;
-  height: 2px;
-  background: white;
-  transition: width 0.3s ease-in-out;
+.left-links a,
+.right-links a {
+ 	color: white;
+  	text-decoration: none;
+  	font-weight: bold; /* Make links stand out */
+  	position: relative; /* For underline animation */
+  	transition: color 0.3s ease; /* Smooth hover transition */
 }
 
-.left-links a:hover::after,
-.right-links a:hover::after {
-  width: 100%; /* Animated underline on hover */
+.left-links a:hover,
+.right-links a:hover {
+  	color: #C6F582; /* Light yellow on hover */
 }
 
 /* Right Paragraph Styling */
