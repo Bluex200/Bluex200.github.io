@@ -7,7 +7,7 @@
 body, html {
     height: 100%; /* Set full height for the layout */
     margin: 0; /* Remove default margin */
-    font-family: Calibri, sans-serif; /* Use clean and modern font */
+    font-family: Calibri, sans-serif; /* Setting the font */
 }
 
 /* Header Section */
@@ -165,227 +165,227 @@ body, html {
 }
 
 .offers-title a:hover {
-    color: inherit; /* Ensure color remains unchanged on hover */
-    text-decoration: none; /* Prevent underline from appearing on hover */
+    	color: inherit; /* Ensure color remains unchanged on hover */
+    	text-decoration: none; /* Prevent underline from appearing on hover */
 }
 
 .offers {
-    display: grid; /* Use grid layout */
-    grid-template-columns: repeat(2, 1fr); /* Two columns */
-    gap: 50px; /* Space between grid items */
+    	display: grid; /* Use grid layout */
+    	grid-template-columns: repeat(2, 1fr); /* Two columns */
+    	gap: 50px; /* Space between grid items */
 }
 
 .offer {
-    position: relative; /* Position relative for overlay effects */
-    width: 100%; /* Full width within the grid */
-    overflow: hidden; /* Hide overflowing content */
-    border-radius: 8px; /* Rounded corners */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    	position: relative; /* Position relative for overlay effects */
+    	width: 100%; /* Full width within the grid */
+    	overflow: hidden; /* Hide overflowing content */
+    	border-radius: 8px; /* Rounded corners */
+   	 box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
 }
 
 .offer img {
-    width: 100%; /* Stretch image to fit the container */
-    height: 100%; /* Stretch image height */
-    object-fit: cover; /* Ensure image fits without distortion */
-    transition: filter 0.3s ease; /* Smooth grayscale transition */
+    	width: 100%; /* Stretch image to fit the container */
+    	height: 100%; /* Stretch image height */
+    	object-fit: cover; /* Ensure image fits without distortion */
+    	transition: filter 0.3s ease; /* Smooth grayscale transition */
 }
 
 .offer:hover img {
-    filter: grayscale(100%); /* Make image grayscale on hover */
+    	filter: grayscale(100%); /* Make image grayscale on hover */
 }
 
 .overlay {
-    position: absolute; /* Position overlay absolutely within the offer box */
-    top: 50%; /* Center vertically */
-    left: 50%; /* Center horizontally */
-    transform: translate(-50%, -50%); /* Adjust position */
-    background: rgba(0, 0, 0, 0.6); /* Semi-transparent black background */
-    color: white; /* White text for contrast */
-    font-size: 1.2rem; /* Medium font size */
-    font-weight: bold; /* Bold text */
-    padding: 5px 10px; /* Add padding around the overlay */
-    border-radius: 5px; /* Rounded edges for overlay */
-    text-align: center; /* Center text within the overlay */
+    	position: absolute; /* Position overlay absolutely within the offer box */
+    	top: 50%; /* Center vertically */
+    	left: 50%; /* Center horizontally */
+    	transform: translate(-50%, -50%); /* Adjust position */
+    	background: rgba(0, 0, 0, 0.6); /* Semi-transparent black background */
+    	color: white; /* White text for contrast */
+    	font-size: 1.2rem; /* Medium font size */
+    	font-weight: bold; /* Bold text */
+    	padding: 5px 10px; /* Add padding around the overlay */
+	border-radius: 5px; /* Rounded edges for overlay */
+    	text-align: center; /* Center text within the overlay */
 }
 
 /* Why Fresh Food Market Section */
 .why-foodmarket {
-    padding: 30px 0; /* Reduce padding to make the section less tall */
-    margin: 60px 0;
-	margin-bottom:150px;/* Add spacing above and below this section */
-    background-color: #f9f9f9; /* Light gray background */
-    width: 100%; /* Ensure the section spans the full width of the screen */
-    box-sizing: border-box; /* Include padding in the width */
+   	padding: 30px 0; /* Reduce padding to make the section less tall */
+    	margin: 60px 0;
+    	margin-bottom:150px;/* Add spacing above and below this section */
+    	background-color: #f9f9f9; /* Light gray background */
+    	width: 100%; /* Ensure the section spans the full width of the screen */
+    	box-sizing: border-box; /* Include padding in the width */
 }
 
 /* Container for Text and Image */
 .foodmarket-container {
-    display: flex; /* Flexbox for layout */
-    align-items: center; /* Center content vertically */
-    justify-content: space-between; /* Space out text and image */
-    flex-wrap: wrap; /* Allow wrapping for smaller screens */
-    gap: 20px; /* Add spacing between text and image */
-    max-width: 1200px; /* Limit width on larger screens */
-    margin: 0 auto; /* Center the content */
+    	display: flex; /* Flexbox for layout */
+    	align-items: center; /* Center content vertically */
+    	justify-content: space-between; /* Space out text and image */
+    	flex-wrap: wrap; /* Allow wrapping for smaller screens */
+    	gap: 20px; /* Add spacing between text and image */
+    	max-width: 1200px; /* Limit width on larger screens */
+    	margin: 0 auto; /* Center the content */
 }
 
 /* Image Styling */
 .foodmarket-image img {
-    max-width: 50%; /* Make the image take half the width of the container */
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 8px; /* Rounded corners for aesthetics */
+    	max-width: 50%; /* Make the image take half the width of the container */
+    	height: auto; /* Maintain aspect ratio */
+    	border-radius: 8px; /* Rounded corners for aesthetics */
 }
 
 /* Text Styling */
 .foodmarket-text {
-    text-align: center; /* Align text to the left */
-    flex: 1; /* Allow text to take up its space */
-    max-width: 50%; /* Limit text width to half the container */
+    	text-align: center; /* Align text to the left */
+    	flex: 1; /* Allow text to take up its space */
+    	max-width: 50%; /* Limit text width to half the container */
 }
 
 .foodmarket-text h2 {
-    font-size: 1.8rem; /* Adjust heading size */
-    margin-bottom: 10px; /* Add space below the heading */
+    	font-size: 1.8rem; /* Adjust heading size */
+    	margin-bottom: 10px; /* Add space below the heading */
 }
 
 .foodmarket-text h3 {
-    font-size: 1.5rem; /* Adjust subheading size */
-    margin-bottom: 15px; /* Add space below the subheading */
+    	font-size: 1.5rem; /* Adjust subheading size */
+    	margin-bottom: 15px; /* Add space below the subheading */
 }
 
 .foodmarket-text p {
-    font-size: 1rem; /* Keep text readable */
-    line-height: 1.5; /* Adjust line height for readability */
+    	font-size: 1rem; /* Keep text readable */
+    	line-height: 1.5; /* Adjust line height for readability */
 }
 
 
 
 /* Categories Section */
 .categories-container {
-    width: 90%; /* Full width with padding */
-    max-width: 1200px; /* Limit width on larger screens */
-    margin: 50px auto;
+    	width: 90%; /* Full width with padding */
+    	max-width: 1200px; /* Limit width on larger screens */
+    	margin: 50px auto;
 	margin-bottom:150px;/* Center the container */
 }
 
 .categories {
-    display: grid; /* Use grid layout */
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive grid for items */
-    gap: 20px; /* Space between items */
+    	display: grid; /* Use grid layout */
+    	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive grid for items */
+    	gap: 20px; /* Space between items */
 }
 
 .category {
-    position: relative; /* Position relative for label and hover effects */
-    height: 150px; /* Fixed height */
-    border-radius: 8px; /* Rounded corners */
-    overflow: hidden; /* Hide overflow content */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth hover effect */
+    	position: relative; /* Position relative for label and hover effects */
+    	height: 150px; /* Fixed height */
+    	border-radius: 8px; /* Rounded corners */
+    	overflow: hidden; /* Hide overflow content */
+    	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    	transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth hover effect */
 }
 
 .category:hover {
-    background-color: #d3d3d3; /* Light gray background on hover */
-    transform: scale(1.02); /* Slight zoom effect on hover */
+    	background-color: #d3d3d3; /* Light gray background on hover */
+   	transform: scale(1.02); /* Slight zoom effect on hover */
 	filter: grayscale(100%); /* Make image grayscale on hover */
 
 }
 
 .category img {
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    object-fit: cover; /* Maintain aspect ratio */
+   	width: 100%; /* Full width */
+    	height: 100%; /* Full height */
+   	object-fit: cover; /* Maintain aspect ratio */
 }
 
 /* Categories Label Styling */
 .label {
-    position: absolute; /* Position over the category */
-    top: 10px; /* Adjust vertical position */
-    left: 50%; /* Center horizontally */
-    transform: translateX(-50%); /* Ensure exact center alignment */
-    background: rgba(0, 0, 0, 0.6); /* Semi-transparent dark background for contrast */
-    color: white; /* White text for readability */
-    padding: 5px 10px; /* Add padding inside the label */
-    font-size: 1rem; /* Standard font size */
-    font-weight: bold; /* Bold text for emphasis */
-    border-radius: 5px; /* Rounded edges for styling */
-    text-align: center; /* Center text within the label */
-    z-index: 2; /* Ensure the label is above the image */
+   	 position: absolute; /* Position over the category */
+    	top: 10px; /* Adjust vertical position */
+    	left: 50%; /* Center horizontally */
+    	transform: translateX(-50%); /* Ensure exact center alignment */
+    	background: rgba(0, 0, 0, 0.6); /* Semi-transparent dark background for contrast */
+    	color: white; /* White text for readability */
+    	padding: 5px 10px; /* Add padding inside the label */
+    	font-size: 1rem; /* Standard font size */
+    	font-weight: bold; /* Bold text for emphasis */
+    	border-radius: 5px; /* Rounded edges for styling */
+    	text-align: center; /* Center text within the label */
+    	z-index: 2; /* Ensure the label is above the image */
 }
 
 /* Footer Section */
 #footer {
-  background-color: #328423;
-  color: white;
-  padding: 20px;
-  display: flex;
-  justify-content: center;
-  box-shadow: 0px -5px 10px rgba(0, 0, 0, 0.5); /* Add a subtle shadow for depth */
-  position: relative; /* For decorative elements */
-  overflow: hidden; /* Hide decorative overflow */
+  	background-color: #328423;
+  	color: white;
+  	padding: 20px;
+  	display: flex;
+  	justify-content: center;
+  	box-shadow: 0px -5px 10px rgba(0, 0, 0, 0.5); /* Add a subtle shadow for depth */
+  	position: relative; /* For decorative elements */
+  	overflow: hidden; /* Hide decorative overflow */
 }
 
 /* Decorative gradient line at the top of the footer */
 #footer::before {
-  content: '';
-  position: absolute;
-  width: 100%;
-  height: 4px;
-  background: linear-gradient(90deg, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0));
-  top: 0;
-  left: 0;
+	content: '';
+  	position: absolute;
+  	width: 100%;
+  	height: 4px;
+  	background: linear-gradient(90deg, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0));
+  	top: 0;
+  	left: 0;
 }
 
 /* Footer Content */
 .footer-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  width: 80%;
-  max-width: 1200px; /* Prevent footer from stretching too wide */
+  	display: flex;
+  	justify-content: space-between;
+  	align-items: flex-start;
+  	width: 80%;
+  	max-width: 1200px; /* Prevent footer from stretching too wide */
 }
 
 /* Left and Right Links */
 .left-links,
 .right-links {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
+  	display: flex;
+  	flex-direction: column;
+  	gap: 10px;
 }
 
 /* Link Styling */
 .left-links a,
 .right-links a {
-  color: white;
-  text-decoration: none;
-  font-weight: bold; /* Make links stand out */
-  position: relative; /* For underline animation */
-  transition: color 0.3s ease; /* Smooth hover transition */
+ 	color: white;
+  	text-decoration: none;
+  	font-weight: bold; /* Make links stand out */
+  	position: relative; /* For underline animation */
+  	transition: color 0.3s ease; /* Smooth hover transition */
 }
 
 .left-links a:hover,
 .right-links a:hover {
-  color: #C6F582; /* Light yellow on hover */
+  	color: #C6F582; /* Light yellow on hover */
 }
 
 .left-links a::after,
 .right-links a::after {
-  content: '';
-  position: absolute;
-  bottom: -2px;
-  left: 0;
-  width: 0;
-  height: 2px;
-  background: white;
-  transition: width 0.3s ease-in-out;
+  	content: '';
+  	position: absolute;
+  	bottom: -2px;
+	left: 0;
+	width: 0;
+  	height: 2px;
+  	background: white;
+  	transition: width 0.3s ease-in-out;
 }
 
 .left-links a:hover::after,
 .right-links a:hover::after {
-  width: 100%; /* Animated underline on hover */
+  	width: 100%; /* Animated underline on hover */
 }
 
 /* Right Paragraph Styling */
 .right-links p {
-  font-size: 0.9rem;
-  color: white;
-  letter-spacing: 0.5px; /* Improve readability */
+	font-size: 0.9rem;
+	color: white;
+  	letter-spacing: 0.5px; /* Improve readability */
