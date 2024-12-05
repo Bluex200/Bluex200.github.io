@@ -66,7 +66,7 @@ detailsEnter.addEventListener('input', function () { //learned from w3school  ht
     this.setCustomValidity('');
 });
 //when click the submit button give a pop up
-document.getElementById("clickbtn").onclick=function(){ // learn from the course
+document.getElementById("clickbtn").onclick=function(event){ // learn from the course
 	 // Prevent the form from submitting and refreshing the page
     	event.preventDefault(); //learn from w3school https://www.w3schools.com/jsref/event_preventdefault.asp 
 	// check if customer enter other info first
