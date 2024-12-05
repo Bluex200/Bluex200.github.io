@@ -67,6 +67,8 @@ detailsEnter.addEventListener('input', function () { //learned from w3school  ht
 });
 //when click the submit button give a pop up
 document.getElementById("clickbtn").onclick=function(){ // learn from the course
+	 // Prevent the form from submitting and refreshing the page
+    	event.preventDefault(); //learn from w3school https://www.w3schools.com/jsref/event_preventdefault.asp 
 	// check if customer enter other info first
 	if (nameEnter.checkValidity() && emailEnter.checkValidity() && detailsEnter.checkValidity()) { // if customer already entered the info , learned from w3school like above
 		alert("Thank you! We have received your message. We will get back to you within 7 working days."); //alert code learned from course
@@ -81,4 +83,5 @@ Reference:
 W3Schools. (n.d.). JavaScript Window Location. W3Schools. Available at: https://www.w3schools.com/js/js_window_location.asp [Accessed 14 Nov. 2024].
 W3Schools. (n.d.). HTML DOM addEventListener() Method. W3Schools. Available at: https://www.w3schools.com/jsref/met_element_addeventlistener.asp [Accessed 14 Nov. 2024].
 W3Schools. (n.d.). JavaScript Validation API. W3Schools. Available at: https://www.w3schools.com/js/js_validation_api.asp [Accessed 14 Nov. 2024].
+W3Schools. (n.d.). HTML DOM Event preventDefault(). W3Schools. Available at: https://www.w3schools.com/jsref/event_preventdefault.asp [Accessed 5 Dec. 2024].
 */
